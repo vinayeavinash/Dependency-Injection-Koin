@@ -72,4 +72,9 @@ dependencies {
     testImplementation ("io.insert-koin:koin-test:3.5.3")
     testImplementation ("io.insert-koin:koin-test-junit4:3.5.3")
     testImplementation ("io.insert-koin:koin-android-test:3.5.3")
+
+    // Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-moshi:2.9.0")
+    implementation ("com.squareup.okhttp3:okhttp:5.0.0-alpha.3")
 }

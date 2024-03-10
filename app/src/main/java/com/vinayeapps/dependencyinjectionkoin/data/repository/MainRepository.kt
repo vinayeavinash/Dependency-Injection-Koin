@@ -1,4 +1,4 @@
-package com.vinayeapps.dependencyinjectionkoin.data
+package com.vinayeapps.dependencyinjectionkoin.data.repository
 
 
 /**
