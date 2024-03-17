@@ -15,7 +15,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
  */
 
 /**
- * This AppModule defines various dependencies required for this project ->
+ * This File defines various dependencies required for this project ->
  * RetrofitInstance,MainRepository,MainViewModel
  */
 
