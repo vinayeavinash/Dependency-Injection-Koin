@@ -10,13 +10,19 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.vinayeapps.dependencyinjectionkoin.presentation.MainViewModel
 import com.vinayeapps.dependencyinjectionkoin.ui.theme.DependencyInjectionKoinTheme
+import org.koin.androidx.viewmodel.ext.android.getViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : ComponentActivity() {
+    private  val viewModel by viewModel<MainViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             DependencyInjectionKoinTheme {
+                val viewModel = getViewModel<MainViewModel>()
+                viewModel.doNetworkCall()
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
